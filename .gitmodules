@@ -1,3 +1,9 @@
 [submodule "lib/markdown"]
 	path = lib/markdown
 	url = git://github.com/michelf/php-markdown.git
+[submodule "lib/showdown"]
+	path = lib/showdown
+	url = git://github.com/coreyti/showdown.git
+[submodule "lib/highlight"]
+	path = lib/highlight
+	url = git://github.com/isagalaev/highlight.js.git
