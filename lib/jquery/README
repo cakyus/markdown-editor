@@ -1,3 +1,4 @@
-Source: http://code.jquery.com/jquery-1.7.2.min.js
-Date: 2012/04/05 21:34:55
-Command: wget -O jquery.min.js http://code.jquery.com/jquery-1.7.2.min.js
+This folder contain jQuery
+To update jQuery to latest version, execute command below ..
+
+	wget -O jquery.min.js http://code.jquery.com/jquery.min.js
