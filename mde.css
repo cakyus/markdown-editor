@@ -21,11 +21,16 @@ a {
 	text-decoration: none;
 }
 
+pre, textarea.markdown-editor {
+	font-family: Monospace;
+	font-size: 16px;
+}
+
 /** @section main layout **/
 
 section.posts {
 	float: left;
-	width: 74%;
+	width: 70%;
 }
 
 section.sidebar {
@@ -87,6 +92,10 @@ body > header nav li {
 
 /** @section sidebar **/
 
+section.sidebar nav {
+	margin: 10px auto;
+}
+
 section.sidebar nav a {
 	display: block;
 	padding: 7px 5px;
@@ -98,4 +107,13 @@ section.sidebar nav a:hover {
 
 span.keyword {
 	background-color: #eee;
+}
+
+/** @section markdown editor **/
+
+textarea.markdown-editor {
+	padding: 10px;
+	width: 100%;
+	height: 80%;
+	border: 1px solid #ddd;
 }

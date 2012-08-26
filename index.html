@@ -1,12 +1,44 @@
 <html>
 	<head>
+		<title>Markdown Editor</title>
 		<script type="text/javascript" src="./lib/jquery/jquery.min.js" ></script>
 		<script type="text/javascript" src="./lib/showdown/src/showdown.js" ></script>
 		<script type="text/javascript" src="editor.js" ></script>
 		<script type="text/javascript" src="mde.js" ></script>
-		<link rel="stylesheet" type="text/css" href="editor.css" />
+		<link rel="stylesheet" type="text/css" href="mde.css" />
 	</head>
 	<body>
+		<header>
+			<h1>Markdown Editor</h1>
+			<nav>
+				<ul>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="posts">
+			<article class="post">
+				<textarea class="markdown-editor" id="page-edit-editor"></textarea>
+			</article>
+		</section>
+		<section class="sidebar">
+			<h3>View</h3>
+			<nav>
+				<ul>
+					<li><a class="mde.editor.showCode" href="#mde.editor.showCode">Editor</a></li>
+					<li><a class="mde.editor.showHTML" href="#mde.editor.showHTML">HTML Code</a></li>
+					<li><a class="mde.editor.showPreview" href="#mde.editor.showPreview">Preview</a></li>
+				</ul>
+			</nav>
+			<h3>File</h3>
+			<nav>
+				<ul>
+					<li><a class="mde.storage.save" href="#mde.editor.showCode">Save</a></li>
+				</ul>
+			</nav>
+		</section>
+		
+		<!-- depreciated
 		<div class="page page-edit">
 			<div class="page-header">
 				<div class="page-header-menu">
@@ -23,5 +55,6 @@
 			</div>
 			<div class="page-footer"></div>
 		</div>
+		-->
 	</body>
 </html>
