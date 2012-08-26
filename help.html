@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Documentation</title>
+		<script type="text/javascript" src="./lib/jquery/jquery.min.js" ></script>
+		<script type="text/javascript" src="./lib/showdown/src/showdown.js" ></script>
+		<script type="text/javascript" src="editor.js" ></script>
+		<script type="text/javascript" src="mde.js" ></script>
+		<link rel="stylesheet" type="text/css" href="editor.css" />
+		<link rel="stylesheet" type="text/css" href="mde.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Documentation</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="help.html">Help</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="posts">
+			<article class="post">
+				<header><a name="text-formating"><h2>Text Formating</h2></a></header>
+				<h3>Linebreaks</h3>
+				<p>End a line with two spaces to add a &lt;br/&gt; linebreak:</p>
+				<pre>
+How do I love thee?<span class="keyword">&nbsp;&nbsp;</span>
+Let me count the ways
+				</pre>
+
+				<h3>Italics and Bold</h3>
+				<pre>
+<span class="keyword">*</span>This is italicized<span class="keyword">*</span>, and so is <span class="keyword">_</span>this<span class="keyword">_</span>.
+<span class="keyword">**</span>This is bold<span class="keyword">**</span>, and so is <span class="keyword">__</span>this<span class="keyword">__</span>.
+Use <span class="keyword">***</span>italics and bold together<span class="keyword">***</span> if you <span class="keyword">___</span>have to<span class="keyword">___</span>.
+				</pre>
+
+
+				<h3>Links</h3>
+				<p>There are three ways to write links. Each is easier to read than the last:</p>
+				<pre>
+Here's an inline link to [Google](http://www.google.com/).
+Here's a reference-style link to [Google][1].
+Here's a very readable link to [Yahoo!][yahoo].
+				</pre>
+				
+				<h3>References</h3>
+				<ol>
+					<li>AskUbuntu. "Markdown Editing Help". Accessed Augustus 27, 2012. <a href="http://askubuntu.com/editing-help">http://askubuntu.com/editing-help</a>.</li>
+				</ol>
+			</article>
+		</section>
+		<section class="sidebar">
+			<h3>Table of Content</h3>
+			<nav>
+				<ul>
+					<li><a href="#text-formating">Text Formating</a></li>
+				</ul>
+			</nav>
+		</section>
+		<footer></footer>
+	</body>
+</html>

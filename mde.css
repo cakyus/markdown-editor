@@ -1,0 +1,101 @@
+
+body {
+	width: 80%;
+	margin: 0 auto;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+p, li {
+	line-height: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/** @section main layout **/
+
+section.posts {
+	float: left;
+	width: 74%;
+}
+
+section.sidebar {
+	float: right;
+	width: 25%;
+}
+
+/** @section posts **/
+
+section.posts header {
+	margin-bottom: 10px;
+}
+
+/** @section navigation bar **/
+
+nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+body > header {
+	position: relative;
+	display: block;
+	background-color: #000;
+	color: #fff;
+	padding: 7px;
+	margin-bottom: 15px;
+}
+
+body > header h1 {
+	font-size: 16px;
+}
+
+/** 
+ * the top and right should be of "body > header nav"
+ * the same as padding of "body > header nav a" 
+ **/
+
+body > header nav {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	text-align: right;
+}
+
+body > header nav a {
+	padding: 5px;
+	color: #fff;
+}
+
+body > header nav a:hover {
+	background-color: #999;
+}
+
+body > header nav li {
+	display: inline;
+}
+
+/** @section sidebar **/
+
+section.sidebar nav a {
+	display: block;
+	padding: 7px 5px;
+}
+
+section.sidebar nav a:hover {
+	background-color: #eee;
+}
+
+span.keyword {
+	background-color: #eee;
+}
