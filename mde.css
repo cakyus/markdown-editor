@@ -4,26 +4,34 @@ body {
 	margin: 0 auto;
 }
 
-p {
-	margin: 0 0 20px 0;
-}
-
-p, li {
-	line-height: 20px;
-}
-
 h1, h2, h3, h4, h5, h6 {
 	margin: 0px;
 	padding: 0px;
+}
+
+p {
+	margin: 10px 0px 4px 0px;
 }
 
 a {
 	text-decoration: none;
 }
 
-pre, textarea.markdown-editor {
+pre, .view-code-editor {
 	font-family: Monospace;
 	font-size: 16px;
+}
+
+pre, code {
+	background-color: #ddd;
+}
+
+pre {
+	padding: 4px 8px;
+}
+
+code {
+	padding: 2px 4px;
 }
 
 /** @section main layout **/
@@ -105,15 +113,37 @@ section.sidebar nav a:hover {
 	background-color: #eee;
 }
 
+section.sidebar li {
+	line-height: 20px;
+}
+
 span.keyword {
 	background-color: #eee;
 }
 
 /** @section markdown editor **/
 
-textarea.markdown-editor {
+.view-code-editor
+, .view-html
+, .view-preview
+ {
+	font-family: Monospace;
+	font-size: 16px;
 	padding: 10px;
 	width: 100%;
-	height: 80%;
 	border: 1px solid #ddd;
 }
+
+.view-code-editor {
+	height: 80%;
+}
+
+.mde-html-tag {
+	color: #00f;
+}
+
+article ol {
+	margin-top: 0px;
+}
+
+
