@@ -3,7 +3,6 @@
 		<title>Markdown Editor</title>
 		<script type="text/javascript" src="./lib/jquery/jquery.min.js" ></script>
 		<script type="text/javascript" src="./lib/showdown/src/showdown.js" ></script>
-		<script type="text/javascript" src="editor.js" ></script>
 		<script type="text/javascript" src="mde.js" ></script>
 		<link rel="stylesheet" type="text/css" href="mde.css" />
 	</head>
@@ -12,49 +11,46 @@
 			<h1>Markdown Editor</h1>
 			<nav>
 				<ul>
+					<li><a href="index.html">Home</a></li>
 					<li><a href="help.html">Help</a></li>
 				</ul>
 			</nav>
 		</header>
 		<section class="posts">
-			<article class="post">
-				<textarea class="markdown-editor" id="page-edit-editor"></textarea>
+			<article class="post view view-code">
+				<textarea class="view-code-editor">
+> "Don't only practice your art, but force your way into its secrets,
+> for it and knowledge can raise men to the divine."
+> - Ludwig van Beethoven 
+
+Feel free to fork this project on [GitHub](https://github.com/cakyus/markdown-editor).
+
+Wish list:
+
+1. Save the content to somewhere. localStorage, WebDAV, or Cloud ?
+1. Show the list of saved document.
+1. Synchronize documents.
+1. Smiley ?
+				</textarea>
 			</article>
+			<article class="post view view-html"></article>
+			<article class="post view view-preview"></article>
 		</section>
 		<section class="sidebar">
 			<h3>View</h3>
 			<nav>
 				<ul>
-					<li><a class="mde.editor.showCode" href="#mde.editor.showCode">Editor</a></li>
-					<li><a class="mde.editor.showHTML" href="#mde.editor.showHTML">HTML Code</a></li>
-					<li><a class="mde.editor.showPreview" href="#mde.editor.showPreview">Preview</a></li>
+					<li><a class="mde-showCode" href="#mde-showCode">Editor</a></li>
+					<li><a class="mde-showPreview" href="#mde-showPreview">Preview</a></li>
+					<li><a class="mde-showHTML" href="#mde-showHTML">HTML Code</a></li>
 				</ul>
 			</nav>
 			<h3>File</h3>
 			<nav>
 				<ul>
-					<li><a class="mde.storage.save" href="#mde.editor.showCode">Save</a></li>
+					<li><a class="mde-save" href="#mde-save">Save</a></li>
 				</ul>
 			</nav>
 		</section>
-		
-		<!-- depreciated
-		<div class="page page-edit">
-			<div class="page-header">
-				<div class="page-header-menu">
-					<a href="help.html" >Syntax</a>
-				</div>
-			</div>
-			<div class="page-content">
-				<div class="page-content-left">
-					<div id="page-edit-html"></div>
-				</div>
-				<div class="page-content-right">
-					<textarea id="page-edit-editor"></textarea>
-				</div>
-			</div>
-			<div class="page-footer"></div>
-		</div>
-		-->
 	</body>
 </html>
